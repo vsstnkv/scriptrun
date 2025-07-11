@@ -55,7 +55,7 @@ class JSMcreateRemoteTask {
 
     final String auKey = "Basic auKey"
 
-//Check issue type and catch errors    
+//CHECK ISSUE TYPE AND CATCH ERRORS    
     void run (MutableIssue issue){
         log.setLevel(Level.DEBUG)
         long scriptStartTime = System.currentTimeMillis()
@@ -82,7 +82,7 @@ class JSMcreateRemoteTask {
         log.debug("${issue.getKey()} Script work time: ${scriptWorkTime} ms.")
         }
 
-//Create remote issue through API
+//CREATE REMOTE ISSUE THROUGH API
     Map createRemoteIssue (MutableIssue issue) {
         Map result = [:]
         String jsmkey = issue.getKey()
